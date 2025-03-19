@@ -1,0 +1,61 @@
+.button {
+    align-items: center;
+    border-radius: 5px;
+    outline: none;
+    box-shadow: none;
+    border: 1px solid transparent;
+    cursor: pointer;
+    display: inline-flex;
+    font-size: 18px;
+    font-weight: 700;
+
+    transition: all .2s ease-in-out;
+
+    &_about-us {
+        padding: 14px 26px;
+        background-color: #9BCC37;
+        color: #fff;
+
+        &:hover {
+            background-color: #77BA04;
+            color: #fff;
+        }
+    }
+    
+    &_move-interview {
+        padding: 12px 14px;
+        background-color: #fff;
+        color: #9BCC37;
+        border: 1px solid #9BCC37;
+
+        &:hover {
+            color: #77BA04;
+            border: 1px solid #77BA04;
+    }
+
+    }
+
+    &_more-info {
+        padding: 13px 40px;
+        background-color: #00B7EC;
+        color: #fff;
+
+        &:hover {
+            background-color:#1998D5;
+            color: #fff;
+        }
+    }
+    &_move-interview_blue {
+        padding: 12px 14px;
+        background-color: #fff;
+        color: #00B7EC;
+        border: 1px solid #00B7EC;
+
+        &:hover {       
+            color: #1998D5;
+            border: 1px solid #1998D5;
+    }
+
+    }
+
+}

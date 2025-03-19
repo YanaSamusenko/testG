@@ -1,0 +1,31 @@
+@import url('cdn.scss');
+@import url('header.scss');
+@import url('button.scss');
+@import url('main.scss');
+@import url('info.scss');
+@import url('carousel.scss');
+@import url('infrastructure.scss');
+@import url('live-feed.scss');
+@import url('signUpPractice.scss');
+@import url('answers.scss');
+@import url('form.scss');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none; 
+    
+}
+
+html {
+    font-family: "Open Sans", sans-serif;
+}
+
+.container {
+    max-width: 1170px;
+    margin: auto;
+    padding: 0 15px;
+}
