@@ -14,7 +14,7 @@ export function LiveFeed () {
             <div className="container">
                 <h2 className="live-feed__title">Живая лента</h2>
                 <div className="live-feed__wrap">
-                    <SimpleCarousel>
+                    <SimpleCarousel >
                     <div className="feed-card">
                         <div className="card-img">
                             <img src={firstFeed} alt="value1" />
@@ -22,7 +22,9 @@ export function LiveFeed () {
                         <div className='card-description'>
                             <p>Экономим на бумаге и угадываем фильмы: дайджест видео марта 2022 года</p>
                         </div>
+                        <div className='card-button'>
                         {Button({type: 'button', name: 'move-interview_blue', children: 'Перейти к статье'})}
+                        </div>
                     </div>
                     <div className="feed-card">
                         <div className="card-img">
@@ -31,7 +33,9 @@ export function LiveFeed () {
                         <div className='card-description'>
                             <p>Изменения 2022 года</p>
                         </div>
+                        <div className='card-button'>
                         {Button({type: 'button', name: 'move-interview_blue', children: 'Перейти к статье'})}
+                        </div>
                      </div>
                      <div className="feed-card">
                         <div className="card-img">
@@ -40,7 +44,9 @@ export function LiveFeed () {
                         <div className='card-description'>
                             <p>Почему стоит работать программистом в 2022 году</p>
                         </div>
+                        <div className='card-button'>
                         {Button({type: 'button', name: 'move-interview_blue', children: 'Перейти к статье'})}
+                        </div>
                      </div>
                      <div className="feed-card">
                         <div className="card-img">
@@ -49,7 +55,9 @@ export function LiveFeed () {
                         <div className='card-description'>
                             <p>Автоматизированный УСН и путевые листы: дайджест новостей за март 2022. Автоматизированный УСН и путевые листы</p>
                         </div>
+                        <div className='card-button'>
                         {Button({type: 'button', name: 'move-interview_blue', children: 'Перейти к статье'})}
+                        </div>
                      </div>
                      </SimpleCarousel>
                 </div>

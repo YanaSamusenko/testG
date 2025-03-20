@@ -60,5 +60,42 @@
             }
         }
     }
+
+@media (max-width: 768px) {
+    &__wrap {
+        flex-direction: column; 
+        align-items: center; 
+
+        .infrastructure__left-wrap {
+            width: 100%; 
+            margin: 0; 
+        }
+
+        .infrastructure__right-wrap {
+            margin-top: 20px; 
+            width: 100%;
+            display: flex; 
+            justify-content: center;  
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    &__title {
+        font-size: 28px;
+    }
+
+    &__wrap {
+        .infrastructure__left-wrap {
+            p {
+                font-size: 16px; 
+            }
+        }
+
+        .infrastructure__right-wrap {
+            margin-top: 15px; 
+        }
+    }
+}
 }
 

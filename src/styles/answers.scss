@@ -1,0 +1,89 @@
+.answers {
+    padding: 50px 10px;
+    background: linear-gradient(#28E47329 16%, #46CD1624 14%, #27DDD163, #05B0D552 );
+
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        .wrap-left {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            // width: 800px;
+            margin: 0px 60px 0px 0px;
+
+            .answers__title {
+                font-size: 36px;
+                font-weight: 300;
+                color: #00B7EC;
+                margin: 0px 0px 20px 0px;
+            }
+
+            .answers__item {
+                margin-bottom: 30px;
+                color: #666666;
+                font-size: 18px;
+                font-weight: 400;
+
+                .answers__question {
+                     max-width: 850px;
+                    
+
+                    &__active {
+                       color: #00B7EC;
+                       margin-bottom: 10px;
+                      
+                    }
+                }
+             }
+         }
+
+        .wrap-right {
+            max-width: 380px;
+            flex: 0 0 auto;
+            img {
+                width: 100%;
+            }
+      }
+    }
+
+@media (max-width: 768px) {
+    padding: 30px 10px; // Уменьшаем отступы
+
+    &__wrap {
+        flex-direction: column; // Изменяем направление на колонку
+        align-items: center; // Центрируем элементы
+
+        .wrap-left {
+            margin-right: 0; // Убираем правый отступ
+            width: 100%; // Занимаем всю ширину
+        }
+
+        .wrap-right {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    padding: 20px 5px; // Уменьшаем отступы еще больше
+
+    &__wrap {
+        .wrap-left {
+            margin: 0; // Убираем все отступы
+        }
+
+        .answers__title {
+            font-size: 28px; // Уменьшаем размер заголовка
+            margin: 0 0 15px; // Уменьшаем отступы
+        }
+
+        .answers__item {
+            margin-bottom: 20px; // Уменьшаем отступы между элементами
+            font-size: 16px; // Уменьшаем размер шрифта
+        }
+    }
+}
+}

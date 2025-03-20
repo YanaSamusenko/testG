@@ -1,7 +1,7 @@
 .values {
     padding: 40px 0px 60px 0px;
     background-color: #E9E9E9;
-
+ 
     &__title {
         font-size: 36px;
         font-weight: 300;
@@ -47,8 +47,35 @@
             }
 
         }
-        
+    }
+    // Медиа-запросы для адаптивности
+    @media (max-width: 768px) {
+        &__title {
+            font-size: 28px; 
+            margin: 0 auto 20px;
+        }
+
+        .values-card {
+            max-width: 100%; 
+            margin: 0 10px; 
+        }
     }
 
+    @media (max-width: 480px) {
+        &__title {
+            font-size: 24px; 
+        }
 
+        .values-card {
+            h3 {
+                font-size: 18px; 
+            }
+
+            .card-description p {
+                font-size: 14px; 
+            }
+        }
+    }
 }
+
+
